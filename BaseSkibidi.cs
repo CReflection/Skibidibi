@@ -5,19 +5,16 @@ namespace Skibidibi
     public abstract class BaseSkibidi : ISkibidiService
     {
 
-        public string? Name { get; set; }
-        public int Strenght { get; set; }
-        public int Speed { get; set; }
-        public float Raiting { get; set; }
-        protected static List<ISkibidiService> _skibidiList = new List<ISkibidiService>
+       
+        protected  List<Skibidi> _skibidiList = new List<Skibidi>
         {
-            new SkibidiService { Name = "Skibidi1", Strenght = 10, Speed = 5, Raiting = 8 },
-            new SkibidiService { Name = "Skibidi2", Strenght = 8, Speed = 7, Raiting = 9 },
+            new Skibidi { Name = "Skibidi1", Strenght = 10, Speed = 5, Raiting = 8 },
+            new Skibidi { Name = "Skibidi2", Strenght = 8, Speed = 7, Raiting = 9 },
         };
-        public abstract ISkibidiService Add(ISkibidiService skibidi);
+        public abstract Skibidi Add(Skibidi skibidi);
         public abstract bool Delete(int index);
-        public abstract ISkibidiService Get(int index);
-        public virtual IEnumerable<ISkibidiService> GetAll()
+        public abstract Skibidi Get(int index);
+        public virtual IEnumerable<Skibidi> GetAll()
         {
             return _skibidiList;
         }

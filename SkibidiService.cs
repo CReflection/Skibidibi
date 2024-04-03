@@ -7,7 +7,7 @@ namespace Skibidibi
 
        
 
-        public override ISkibidiService Get(int index)
+        public override Skibidi Get(int index)
         {
             if (index >= 0 && index < _skibidiList.Count)
             {
@@ -24,7 +24,7 @@ namespace Skibidibi
         /// </summary>
         /// <param name="skibidi"></param>
         /// <returns></returns>
-        public override ISkibidiService Add(ISkibidiService skibidi)
+        public override Skibidi Add(Skibidi skibidi)
         {
             _skibidiList.Add(skibidi);
             //return CreatedAtAction(nameof(Add), new {index = _skibidiList.Count - 1}, skibidi);

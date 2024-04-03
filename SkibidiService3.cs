@@ -4,7 +4,7 @@ namespace Skibidibi
 {
     public class SkibidiService3 : BaseSkibidi
     {
-        public override ISkibidiService Add([FromBody] ISkibidiService skibidi)
+        public override Skibidi Add([FromBody] Skibidi skibidi)
         {
             throw new NotImplementedException();
         }
@@ -14,7 +14,7 @@ namespace Skibidibi
             throw new NotImplementedException();
         }
 
-        public override ISkibidiService Get(int index)
+        public override Skibidi Get(int index)
         {
             throw new NotImplementedException();
         }

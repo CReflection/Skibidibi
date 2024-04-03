@@ -17,14 +17,14 @@ namespace Skibidibi.Controllers
         }
 
         [HttpGet("GetSkibidies")]
-        public ActionResult<IEnumerable<ISkibidiService>> GetAll()
+        public ActionResult<IEnumerable<Skibidi>> GetAll()
         {
             var result = _service.GetAll();
             return Ok(result);
         }
 
         [HttpGet("{index}")]
-        public ActionResult<ISkibidiService> Get(int index) 
+        public ActionResult<Skibidi> Get(int index) 
         {
             var result = _service.Get(index);
             if(result == null)
@@ -43,7 +43,7 @@ namespace Skibidibi.Controllers
         /// <param name="skibidi"></param>
         /// <returns></returns>
         [HttpPost("Add")]
-        public ActionResult Add([FromBody]SkibidiService skibidi)
+        public ActionResult Add([FromBody] Skibidi skibidi)
         {
             var result = _service.Add(skibidi);
             return Ok(result);

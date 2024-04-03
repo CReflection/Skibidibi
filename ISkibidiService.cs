@@ -4,15 +4,12 @@ namespace Skibidibi
 {
     public interface ISkibidiService
     {
-        string? Name { get; set; }
-        int Strenght { get; set; }
-        int Speed { get; set; }
-        float Raiting { get; set; }
 
-        ISkibidiService Add(ISkibidiService skibidi);
+
+        Skibidi Add(Skibidi skibidi);
         bool Delete(int index);
-        ISkibidiService Get(int index);
-        IEnumerable<ISkibidiService> GetAll();
+        Skibidi Get(int index);
+        IEnumerable<Skibidi> GetAll();
         int GetStrenght(int index);
         int SumTheStrongest();
     }
