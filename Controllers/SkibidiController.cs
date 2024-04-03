@@ -37,7 +37,11 @@ namespace Skibidibi.Controllers
             }
             
         }
-
+        /// <summary>
+        /// endpoint dodający skibidi
+        /// </summary>
+        /// <param name="skibidi"></param>
+        /// <returns></returns>
         [HttpPost("Add")]
         public ActionResult Add([FromBody]SkibidiService skibidi)
         {
