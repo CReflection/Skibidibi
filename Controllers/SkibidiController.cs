@@ -39,7 +39,7 @@ namespace Skibidibi.Controllers
         }
 
         [HttpPost("Add")]
-        public ActionResult<ISkibidiService> Add([FromBody]SkibidiService skibidi)
+        public ActionResult Add([FromBody]SkibidiService skibidi)
         {
             var result = _service.Add(skibidi);
             return Ok(result);
