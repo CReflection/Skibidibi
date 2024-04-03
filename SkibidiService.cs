@@ -19,6 +19,11 @@ namespace Skibidibi
             }
         }
 
+        /// <summary>
+        /// asdasdas
+        /// </summary>
+        /// <param name="skibidi"></param>
+        /// <returns></returns>
         public override ISkibidiService Add(ISkibidiService skibidi)
         {
             _skibidiList.Add(skibidi);
